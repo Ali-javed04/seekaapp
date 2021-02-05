@@ -1,0 +1,80 @@
+
+<div *ngIf="mainData == 1">
+  <div class="row">
+    <div class="col-6">
+      <svg  xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18">
+        <g id="Group_14075" data-name="Group 14075" transform="translate(0 -1)">
+          <path id="Path_7563" data-name="Path 7563" d="M185.726,143.447,182,142.132v2.528a.559.559,0,0,0,.559.559h7.45a.559.559,0,0,0,.559-.559v-2.528l-3.726,1.315a1.676,1.676,0,0,1-1.116,0Z" transform="translate(-175.267 -135.819)" fill="#ff7474"/>
+          <path id="Path_7564" data-name="Path 7564" d="M112.373,3.32l6.333,2.235a.559.559,0,0,0,.372,0l5.588-1.972v2.19a.559.559,0,1,0,1.118,0V2.793a.559.559,0,0,0-.373-.527L119.077.031a.558.558,0,0,0-.372,0l-6.333,2.235a.559.559,0,0,0,0,1.054Z" transform="translate(-107.901 1.001)" fill="#ff7474"/>
+          <path id="Path_7565" data-name="Path 7565" d="M124.842,288.736l-2.114,2.764a2.235,2.235,0,0,1-1.775.877h-3.924a.559.559,0,1,1,0-1.118h3.4a1.324,1.324,0,0,0,1.329-1.329,1.3,1.3,0,0,0-1.3-1.278h-3.911a3.236,3.236,0,0,0-4.124-.3l-.421.3v6.333h9.717a3.353,3.353,0,0,0,2.82-1.54l2.181-3.392a1.147,1.147,0,0,0-1.876-1.317Z" transform="translate(-107.901 -277.102)" fill="#ff7474"/>
+          <path id="Path_7566" data-name="Path 7566" d="M2.5,282H.559a.559.559,0,0,0-.559.559v7.45a.559.559,0,0,0,.559.559H2.5a.559.559,0,0,0,.559-.559v-7.45A.559.559,0,0,0,2.5,282Z" transform="translate(0 -271.568)" fill="#ff7474"/>
+        </g>
+      </svg>
+      <span class="pl-3">Learn More Scholorship</span>
+      <p class="f-talk">Talk 2 scholoship recipient</p>
+    </div>
+    <div class="col-6">
+      <svg (click)="hideDiv()" class ="float-right icon-c"xmlns="http://www.w3.org/2000/svg" width="4" height="16" viewBox="0 0 4 16">
+        <g id="More" transform="translate(14.156 -0.023) rotate(90)">
+          <path id="Shape" d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Z" transform="translate(0.023 10.156)" fill="#454545"/>
+          <path id="Shape-2" data-name="Shape" d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Z" transform="translate(6.023 10.156)" fill="#454545"/>
+          <path id="Shape-3" data-name="Shape" d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0Z" transform="translate(12.023 10.156)" fill="#454545"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <div class="row">
+        <div class="col-3">
+          <img [src]="post.profileImg" alt="" class="resize">
+        </div>
+        <div class="col-9">
+          <h5 class="text-primary mb-0">{{post.name}}</h5>
+          <p class="f-school">{{post.school}}r</p>
+          <p class="f-adress">{{post.adress}}</p>
+          <p class="f-country">{{post.country}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+
+      <svg class="float-right" xmlns="http://www.w3.org/2000/svg" width="49" height="54.432" viewBox="0 0 49 54.432">
+        <g id="Group_15877" data-name="Group 15877" transform="translate(5713 14236)">
+          <circle id="Ellipse_790" data-name="Ellipse 790" cx="24.5" cy="24.5" r="24.5" transform="translate(-5713 -14236)" fill="rgba(212,214,219,0.3)"/>
+          <path id="Icon_awesome-mouse-pointer" data-name="Icon awesome-mouse-pointer" d="M10.106,11.006H6.558l1.867,4.548a.621.621,0,0,1-.316.8l-1.644.717a.592.592,0,0,1-.78-.325L3.911,12.43l-2.9,2.981A.592.592,0,0,1,0,14.981V.612A.592.592,0,0,1,1.012.182l9.511,9.783A.613.613,0,0,1,10.106,11.006Z" transform="translate(-5683.715 -14198.689)"/>
+          <circle id="red_dot" data-name="red dot" cx="2.5" cy="2.5" r="2.5" transform="translate(-5681 -14206)" fill="#ff4860"/>
+          <g id="Group_15867" data-name="Group 15867" transform="translate(-5700.937 -14224.986)">
+            <g id="Group_15866" data-name="Group 15866" transform="translate(-3.063 -6.014)">
+              <path id="Path_15322" data-name="Path 15322" d="M0,33.314a.559.559,0,0,1,.328-.444L25.207,21.788a10.233,10.233,0,0,1,.157-.04.651.651,0,0,1,.1,0,.56.56,0,0,1,.086.009.552.552,0,0,1,.1.032c.017.007.034.008.05.016s.019.017.031.023a.5.5,0,0,1,.078.06.559.559,0,0,1,.071.074c.008.011.02.018.028.029s.011.03.019.043a.6.6,0,0,1,.042.1.522.522,0,0,1,.025.182.49.49,0,0,1-.012.1c0,.014,0,.029-.006.042L19.2,44.614a.556.556,0,0,1-.334.357.59.59,0,0,1-.208.039.581.581,0,0,1-.286-.075l-5.7-3.267L7.724,45.978a.532.532,0,0,1-.087.052.7.7,0,0,1-.079.048.561.561,0,0,1-.208.041.589.589,0,0,1-.2-.04l-.019-.006c-.015-.006-.025-.019-.038-.025l-.011-.008a.56.56,0,0,1-.087-.049c-.007-.006-.01-.014-.017-.02l-.032-.029s-.009-.006-.012-.009-.016-.031-.027-.045a.613.613,0,0,1-.053-.08c-.008-.016-.016-.03-.023-.047a.549.549,0,0,1-.017-.061.526.526,0,0,1-.015-.094c0-.016-.009-.028-.009-.042V38.638L.226,33.817A.547.547,0,0,1,0,33.314ZM11.646,41.08l-.66-.379L9.734,42.745ZM7.915,43.564,10.22,39.8a.559.559,0,0,1,.109-.214l9.937-11.947L7.915,38.607Z" transform="translate(0 -15.744)" fill="#454545"/>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- hidden post -->
+
+<div *ngIf="mainData == 2">
+<div class="row">
+  <div class="col-2">
+    <svg  id="Group_21455" data-name="Group 21455" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+      <g id="Group_21454" data-name="Group 21454">
+        <path id="Path_15609" data-name="Path 15609" d="M.171,26.18,26.179.171a.583.583,0,0,1,.825,0L27.829,1a.583.583,0,0,1,0,.825L23,6.645a14.992,14.992,0,0,1,4.967,7.177.586.586,0,0,1,0,.357A14.7,14.7,0,0,1,14,24.5a14.416,14.416,0,0,1-7.03-1.82L1.82,27.829a.583.583,0,0,1-.825,0L.171,27A.583.583,0,0,1,.171,26.18ZM14,22.167A8.155,8.155,0,0,0,20.533,9.116L18,11.652A4.571,4.571,0,0,1,18.666,14,4.672,4.672,0,0,1,14,18.667,4.571,4.571,0,0,1,11.652,18L9.116,20.534A8.147,8.147,0,0,0,14,22.167Z" transform="translate(0 0)"/>
+        <path id="Path_15610" data-name="Path 15610" d="M251.33,171.108a.585.585,0,0,1-.126.64l-4.039,4.039a.584.584,0,0,1-1-.42,4.641,4.641,0,0,1,4.617-4.617A.638.638,0,0,1,251.33,171.108Z" transform="translate(-236.833 -161.415)"/>
+        <path id="Path_15611" data-name="Path 15611" d="M173.857,67.027a.585.585,0,0,1-.665.114,8.092,8.092,0,0,0-3.519-.805,8.188,8.188,0,0,0-8.179,8.179,8.093,8.093,0,0,0,.805,3.519.585.585,0,0,1-.114.665l-2.025,2.025a.584.584,0,0,1-.413.171h0a.587.587,0,0,1-.414-.173,15.225,15.225,0,0,1-3.652-6.028.588.588,0,0,1,0-.357A14.723,14.723,0,0,1,169.673,64a14.55,14.55,0,0,1,5.117.927.584.584,0,0,1,.208.96Z" transform="translate(-155.651 -60.494)"/>
+      </g>
+    </svg>
+
+  </div>
+  <div class="col-8">
+    <p class="m-0">Post Hidden</p>
+    <p class="m-0">you see this post on your home page</p>
+  </div>
+  <div class="col-2">
+    <button class="b-size" (click)="undoDiv()">Undo</button>
+  </div>
+</div>
+</div>

@@ -1,0 +1,7 @@
+@import '../../../../size.scss';
+
+.main-div {
+  @include mobile {
+    padding: 0;
+  }
+}

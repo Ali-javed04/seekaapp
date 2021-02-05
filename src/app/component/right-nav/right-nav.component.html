@@ -1,0 +1,18 @@
+<div class="container-fluid p-0">
+  <div class="ist-div">
+    <h5>People you May Know</h5>
+    <div *ngFor="let friend of friendList">
+      <div class="row mt-4 ">
+        <div class="col-3 pr-0">
+          <img [src]="friend.profile" alt="" class="resize">
+        </div>
+        <div class="col-9 pr-0">
+          <h5 class="text-primary mb-0">{{friend.name}}</h5>
+          <p class="mb-0">{{friend.location}}</p>
+          <p *ngIf="friend.mutualFriend != 0" class="text-primary ">{{friend.mutualFriend}} Mutual Friend</p>
+          <button class="btn btn-primary">Follow</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

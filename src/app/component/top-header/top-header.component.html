@@ -1,0 +1,156 @@
+
+<header>
+  <!--- Navbar --->
+  <div class="container-fluid main-div">
+	<nav class="navbar navbar-expand-lg main-div2">
+		<div class="container ">
+      <a class="navbar-brand " href="#"><h2 class="h-logo">seeka</h2></a>
+       <div class="main-search ml-3">
+      <div class=" has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </div>
+			<button class="navbar-btn d-sm-block d-lg-none d-md-none" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</button>
+			<div class="collapse navbar-collapse" id="nvbCollapse">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item pl-1" [ngClass]="{'active': currentState('home')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17.953" height="14.641" viewBox="0 0 17.953 14.641">
+                <path id="Path_1617" data-name="Path 1617" d="M17.728,12.034A.646.646,0,0,0,17.658,11L9.634,5.088a1.146,1.146,0,0,0-1.3.013L.279,11.317a.642.642,0,0,0-.039,1.03l.2.177A1,1,0,0,0,1.65,12.6l.6-.454v6.645a.816.816,0,0,0,.876.738H6.266a.816.816,0,0,0,.876-.738V14.145h4v4.649a.762.762,0,0,0,.823.737h3.326a.816.816,0,0,0,.876-.738V12.242l.371.274c.2.151.634.03.96-.272Z" transform="translate(0 -4.89)" fill="#fff"/>
+              </svg>
+            </div>
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/home']" routerLinkActive="router-link-active" >Home</a>
+            </div>
+          </li>
+          <li class="nav-item pl-1" [ngClass]="{'active': currentState('apply')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.2" height="15.229" viewBox="0 0 15.2 15.229">
+                <path id="Icon_awesome-paper-plane" data-name="Icon awesome-paper-plane" d="M13.2.087.347,7.5A.666.666,0,0,0,.408,8.7L3.356,9.937l7.966-7.021a.166.166,0,0,1,.238.23l-6.68,8.138v2.232a.665.665,0,0,0,1.178.438L7.82,11.811l3.455,1.447a.667.667,0,0,0,.915-.5l2-11.979A.666.666,0,0,0,13.2.087Z" transform="translate(0.5 0.517)" fill="#f2f2f2" stroke="#eee" stroke-width="1"/>
+              </svg>
+
+            </div>
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/apply']" routerLinkActive="router-link-active" >Apply</a>
+            </div>
+          </li>
+          <li class="nav-item pl-1" [ngClass]="{'active': currentState('mypeople')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22.123" height="14.442" viewBox="0 0 22.123 14.442">
+                <path id="Icon_material-people" data-name="Icon material-people" d="M15.9,13.261a2.88,2.88,0,1,0-2.88-2.88A2.868,2.868,0,0,0,15.9,13.261Zm-7.681,0a2.88,2.88,0,1,0-2.88-2.88A2.868,2.868,0,0,0,8.221,13.261Zm0,1.92c-2.237,0-6.721,1.123-6.721,3.36v2.4H14.942v-2.4C14.942,16.3,10.458,15.181,8.221,15.181Zm7.681,0c-.278,0-.6.019-.931.048a4.052,4.052,0,0,1,1.891,3.312v2.4h5.761v-2.4C22.623,16.3,18.139,15.181,15.9,15.181Z" transform="translate(-1 -7)" fill="#f2f2f2" stroke="#eee" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/mypeople']" routerLinkActive="router-link-active" >My People</a>
+            </div>
+          </li>
+          <li class="nav-item pl-1" [ngClass]="{'active': currentState('messages')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16.001" height="16.708" viewBox="0 0 16.001 16.708">
+                <path id="Icon_material-message" data-name="Icon material-message" d="M16.5,3H4.5A1.5,1.5,0,0,0,3.008,4.5L3,18l3-3H16.5A1.5,1.5,0,0,0,18,13.5v-9A1.5,1.5,0,0,0,16.5,3ZM15,12H6V10.5h9Zm0-2.25H6V8.25h9ZM15,7.5H6V6h9Z" transform="translate(-2.499 -2.5)" fill="#f2f2f2" stroke="#eee" stroke-width="1"/>
+              </svg>
+            </div>
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/messages']" routerLinkActive="router-link-active" >Messages</a>
+            </div>
+          </li>
+          <li class="nav-item pl-1" [ngClass]="{'active': currentState('notification')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15.046" height="14.75" viewBox="0 0 15.046 14.75">
+                <path id="Icon_material-notifications-active" data-name="Icon material-notifications-active" d="M6.942,4.859l-1-1A7.319,7.319,0,0,0,3.045,9.367h1.4A5.93,5.93,0,0,1,6.942,4.859Zm8.7,4.508h1.4a7.364,7.364,0,0,0-2.893-5.512l-1,1A5.965,5.965,0,0,1,15.641,9.367Zm-1.383.351A4.278,4.278,0,0,0,11.1,5.281V4.8a1.053,1.053,0,1,0-2.106,0v.477A4.266,4.266,0,0,0,5.832,9.718v3.511l-1.4,1.4v.7H15.662v-.7l-1.4-1.4Zm-4.213,7.723a1.23,1.23,0,0,0,.281-.028,1.425,1.425,0,0,0,1.011-.828,1.41,1.41,0,0,0,.105-.548H8.634A1.414,1.414,0,0,0,10.045,17.441Z" transform="translate(-2.523 -3.191)" fill="#f2f2f2" stroke="#eee" stroke-width="1"/>
+              </svg>
+
+            </div>
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/notification']" routerLinkActive="router-link-active" >Notification</a>
+            </div>
+          </li>
+          <li class="nav-item pl-1" [ngClass]="{'active': currentState('account')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+                <defs>
+                  <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 128 128">
+                    <image width="128" height="128" xlink:href="data:image/jpeg;base64,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"/>
+                  </pattern>
+                </defs>
+                <g id="melbourne_logo" data-name="melbourne logo" stroke="#888" stroke-width="0.2" fill="url(#pattern)">
+                  <circle cx="10" cy="10" r="10" stroke="none"/>
+                  <circle cx="10" cy="10" r="9.9" fill="none"/>
+                </g>
+              </svg>
+            </div>
+
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/Account']" routerLinkActive="router-link-active" >
+                <div class="dropdown">
+                  <button class="dropbtn" >Me
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="up-icon">
+                    <i class="fa fa-caret-up iconi"></i>
+                  </div>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+               </a>
+            </div>
+          </li>
+          <li class="nav-item pl-1 place-nav" [ngClass]="{'active': currentState('account')}">
+            <div class="col-12 text-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17.65" height="17.334" viewBox="0 0 17.65 17.334">
+                <g id="dot" transform="translate(0 -2.471)">
+                  <g id="Group_8547" data-name="Group 8547" transform="translate(0 2.471)">
+                    <path id="Path_4486" data-name="Path 4486" d="M2.914,2.471A2.064,2.064,0,1,0,4.978,4.535,2.066,2.066,0,0,0,2.914,2.471Z" transform="translate(-0.796 -2.471)" fill="#fff"/>
+                    <path id="Path_4487" data-name="Path 4487" d="M107.433,2.471A2.064,2.064,0,1,0,109.5,4.535,2.066,2.066,0,0,0,107.433,2.471Z" transform="translate(-98.635 -2.471)" fill="#fff"/>
+                    <path id="Path_4488" data-name="Path 4488" d="M213.643,6.6a2.064,2.064,0,1,0-2.064-2.064A2.066,2.066,0,0,0,213.643,6.6Z" transform="translate(-198.057 -2.471)" fill="#fff"/>
+                    <path id="Path_4489" data-name="Path 4489" d="M2.064,110.077A2.064,2.064,0,1,0,0,108.013,2.066,2.066,0,0,0,2.064,110.077Z" transform="translate(0 -99.336)" fill="#fff"/>
+                    <path id="Path_4490" data-name="Path 4490" d="M106.589,110.077a2.064,2.064,0,1,0-2.064-2.064A2.066,2.066,0,0,0,106.589,110.077Z" transform="translate(-97.845 -99.336)" fill="#fff"/>
+                    <path id="Path_4491" data-name="Path 4491" d="M212.8,110.077a2.064,2.064,0,1,0-2.065-2.064A2.066,2.066,0,0,0,212.8,110.077Z" transform="translate(-197.264 -99.336)" fill="#fff"/>
+                    <path id="Path_4492" data-name="Path 4492" d="M2.8,209.108a2.064,2.064,0,1,0,2.064,2.064A2.066,2.066,0,0,0,2.8,209.108Z" transform="translate(-0.692 -195.902)" fill="#fff"/>
+                    <path id="Path_4493" data-name="Path 4493" d="M107.328,209.108a2.064,2.064,0,1,0,2.064,2.064A2.066,2.066,0,0,0,107.328,209.108Z" transform="translate(-98.537 -195.902)" fill="#fff"/>
+                    <path id="Path_4494" data-name="Path 4494" d="M213.541,209.108a2.064,2.064,0,1,0,2.064,2.064A2.066,2.066,0,0,0,213.541,209.108Z" transform="translate(-197.962 -195.902)" fill="#fff"/>
+                  </g>
+                </g>
+              </svg>
+
+            </div>
+
+            <div class="col-12 text-center">
+              <a class="nav-link p-0" [routerLink]="['/place']" routerLinkActive="router-link-active" >
+                <div class="dropdown">
+                  <button class="dropbtn" >Place
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="up-icon">
+                    <i class="fa fa-caret-up iconi"></i>
+                  </div>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+               </a>
+            </div>
+          </li>
+
+
+
+
+
+				</ul>
+			</div>
+    </div>
+
+  </nav>
+</div>
+	<!--# Navbar #-->
+	</header>
+
+
